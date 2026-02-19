@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+/* reusable glass styles */
+.glass {
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+}
+
+.glass-hover {
+  transition: transform 200ms ease, background 200ms ease, box-shadow 200ms ease;
+}
+
+.glass-hover:hover {
+  background: rgba(255,255,255,0.07);
+  transform: translateY(-2px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+}
